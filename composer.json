@@ -1,0 +1,22 @@
+{
+    "name": "qcloud/vod-dy-php-sdk",
+    "description": "TencentCloudApi for douyu php sdk",
+    "type": "library",
+    "homepage": "https://github.com/tencentyun/vod-dy-php-sdk",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "chenlishi",
+            "email": "402659721@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "guzzlehttp/guzzle": "^6.3 || ^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TencentCloud\\": "./src/TencentCloud"
+        }
+    }
+}
