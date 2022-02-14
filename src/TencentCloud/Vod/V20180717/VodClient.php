@@ -38,6 +38,8 @@ use TencentCloud\Vod\V20180717\Models as Models;
 7. 智能内容审核（鉴黄、鉴恐、鉴政）；
 8. 智能内容分析（标签、分类、封面、按帧标签）；
 9. 智能内容识别（人脸、文本全文、文本关键词、语音全文、语音关键词）。
+ * @method Models\DescribeMediaMetaDataForDYResponse DescribeMediaMetaDataForDY(Models\DescribeMediaMetaDataForDYRequest $req) 获取媒体的元信息，包括视频画面宽、高、编码格式、时长、帧率等。
+ * @method Models\DescribeTaskDetailForDYResponse DescribeTaskDetailForDY(Models\DescribeTaskDetailForDYRequest $req) 通过任务 ID 查询任务的执行状态和结果的详细信息（最多可以查询3天之内提交的任务）。
  */
 
 class VodClient extends AbstractClient
