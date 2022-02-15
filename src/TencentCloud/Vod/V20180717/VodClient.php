@@ -23,6 +23,9 @@ use TencentCloud\Common\Credential;
 use TencentCloud\Vod\V20180717\Models as Models;
 
 /**
+ * @method Models\DeleteMediaForDYResponse DeleteMediaForDY(Models\DeleteMediaForDYRequest $req) 删除指定文件，如果是 m3u8 文件，会同时删除 ts 文件。
+ * @method Models\DescribeMediaMetaDataForDYResponse DescribeMediaMetaDataForDY(Models\DescribeMediaMetaDataForDYRequest $req) 获取媒体的元信息，包括视频画面宽、高、编码格式、时长、帧率等。
+ * @method Models\DescribeTaskDetailForDYResponse DescribeTaskDetailForDY(Models\DescribeTaskDetailForDYRequest $req) 通过任务 ID 查询任务的执行状态和结果的详细信息（最多可以查询3天之内提交的任务）。
  * @method Models\EditMediaForDYResponse EditMediaForDY(Models\EditMediaForDYRequest $req) 对视频进行编辑（剪辑、拼接等），生成一个新的点播视频。编辑的功能包括：
 
 1. 对一个文件进行剪辑，生成一个新的视频；
@@ -38,8 +41,7 @@ use TencentCloud\Vod\V20180717\Models as Models;
 7. 智能内容审核（鉴黄、鉴恐、鉴政）；
 8. 智能内容分析（标签、分类、封面、按帧标签）；
 9. 智能内容识别（人脸、文本全文、文本关键词、语音全文、语音关键词）。
- * @method Models\DescribeMediaMetaDataForDYResponse DescribeMediaMetaDataForDY(Models\DescribeMediaMetaDataForDYRequest $req) 获取媒体的元信息，包括视频画面宽、高、编码格式、时长、帧率等。
- * @method Models\DescribeTaskDetailForDYResponse DescribeTaskDetailForDY(Models\DescribeTaskDetailForDYRequest $req) 通过任务 ID 查询任务的执行状态和结果的详细信息（最多可以查询3天之内提交的任务）。
+ * @method Models\RestoreMediaForDYResponse RestoreMediaForDY(Models\RestoreMediaForDYRequest $req) 当媒体文件的存储类型是归档存储或深度归档存储时，是不可访问的。如需访问，则需要调用本接口进行解冻，解冻后可访问的媒体文件是临时的，在有效期过后，则不可访问。
  */
 
 class VodClient extends AbstractClient
