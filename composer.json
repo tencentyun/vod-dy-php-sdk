@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "TencentCloud\\": "./src/TencentCloud"
+            "TencentCloudForDY\\": "./src/TencentCloudForDY"
         }
     }
 }

@@ -31,15 +31,15 @@
 ```php
 <?php
 require_once '/path/to/vendor/autoload.php';
-use TencentCloud\Common\Credential;
+use TencentCloudForDY\Common\Credential;
 // 导入可选配置类
-use TencentCloud\Common\Profile\ClientProfile;
-use TencentCloud\Common\Profile\HttpProfile;
-use TencentCloud\Common\Exception\TencentCloudSDKException;
+use TencentCloudForDY\Common\Profile\ClientProfile;
+use TencentCloudForDY\Common\Profile\HttpProfile;
+use TencentCloudForDY\Common\Exception\TencentCloudSDKException;
 // 导入 vod 产品的 client
-use TencentCloud\Vod\V20180717\VodClient;
+use TencentCloudForDY\Vod\V20180717\VodClient;
 // 导入要请求接口对应的 Request 类
-use TencentCloud\Vod\V20180717\Models\ProcessMediaForDYRequest;
+use TencentCloudForDY\Vod\V20180717\Models\ProcessMediaForDYRequest;
 
 try {
     // 实例化一个证书对象，入参需要传入腾讯云账户 secretId，secretKey
