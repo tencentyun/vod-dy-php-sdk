@@ -1,6 +1,6 @@
 {
     "name": "qcloud/vod-dy-php-sdk",
-    "description": "TencentCloudApi for douyu php sdk",
+    "description": "TencentCloudApi for dy php sdk",
     "type": "library",
     "homepage": "https://github.com/tencentyun/vod-dy-php-sdk",
     "license": "Apache-2.0",
