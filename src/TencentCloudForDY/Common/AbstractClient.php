@@ -21,7 +21,8 @@ namespace TencentCloudForDY\Common;
 use \ReflectionClass;
 
 use TencentCloudForDY\Common\Http\HttpConnection;
-use TencentCloudForDY\Common\Profile\ClientProfileuse TencentCloudForDY\Common\Profile\HttpProfile;
+use TencentCloudForDY\Common\Profile\ClientProfile;
+use TencentCloudForDY\Common\Profile\HttpProfile;
 use TencentCloudForDY\Common\Profile\RegionBreakerProfile;
 ;
 use TencentCloudForDY\Common\CircuitBreaker;
