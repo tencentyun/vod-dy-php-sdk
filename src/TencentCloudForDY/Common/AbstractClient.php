@@ -24,7 +24,6 @@ use TencentCloudForDY\Common\Http\HttpConnection;
 use TencentCloudForDY\Common\Profile\ClientProfile;
 use TencentCloudForDY\Common\Profile\HttpProfile;
 use TencentCloudForDY\Common\Profile\RegionBreakerProfile;
-;
 use TencentCloudForDY\Common\CircuitBreaker;
 use TencentCloudForDY\Common\Exception\TencentCloudSDKException;
 
