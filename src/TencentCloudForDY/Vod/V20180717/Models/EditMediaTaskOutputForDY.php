@@ -24,6 +24,8 @@ use TencentCloudForDY\Common\AbstractModel;
  * @method void setOutputStorage(TaskOutputStorageForDY $OutputStorage) 设置编辑后文件的目标存储。
  * @method string getPath() 获取编辑后的视频文件路径。
  * @method void setPath(string $Path) 设置编辑后的视频文件路径。
+ * @method string getProcedureTaskId() 获取云点播对编辑后的视频文件发起 ProcessMediaForDY 任务的任务 ID。
+ * @method void setProcedureTaskId(string $ProcedureTaskId) 设置云点播对编辑后的视频文件发起 ProcessMediaForDY 任务的任务 ID。
  */
 class EditMediaTaskOutputForDY extends AbstractModel
 {
@@ -38,8 +40,14 @@ class EditMediaTaskOutputForDY extends AbstractModel
     public $Path;
 
     /**
+     * @var string 云点播对编辑后的视频文件发起 ProcessMediaForDY 任务的任务 ID。
+     */
+    public $ProcedureTaskId;
+
+    /**
      * @param TaskOutputStorageForDY $OutputStorage 编辑后文件的目标存储。
      * @param string $Path 编辑后的视频文件路径。
+     * @param string $ProcedureTaskId 云点播对编辑后的视频文件发起 ProcessMediaForDY 任务的任务 ID。
      */
     function __construct()
     {
@@ -61,6 +69,10 @@ class EditMediaTaskOutputForDY extends AbstractModel
 
         if (array_key_exists("Path",$param) and $param["Path"] !== null) {
             $this->Path = $param["Path"];
+        }
+
+        if (array_key_exists("ProcedureTaskId",$param) and $param["ProcedureTaskId"] !== null) {
+            $this->ProcedureTaskId = $param["ProcedureTaskId"];
         }
     }
 }

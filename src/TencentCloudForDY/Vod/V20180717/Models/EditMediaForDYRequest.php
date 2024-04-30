@@ -30,6 +30,8 @@ use TencentCloudForDY\Common\AbstractModel;
  * @method void setOutputConfig(EditMediaOutputConfigForDY $OutputConfig) 设置编辑后生成的文件配置。
  * @method integer getTasksPriority() 获取任务优先级，数值越大优先级越高，取值范围是-10到 10，不填代表0。
  * @method void setTasksPriority(integer $TasksPriority) 设置任务优先级，数值越大优先级越高，取值范围是-10到 10，不填代表0。
+ * @method string getExtInfo() 获取保留字段，特殊用途时使用。
+ * @method void setExtInfo(string $ExtInfo) 设置保留字段，特殊用途时使用。
  * @method string getSessionId() 获取用于去重的识别码，如果三天内曾有过相同的识别码的请求，则本次的请求会返回错误。最长 50 个字符，不带或者带空字符串表示不做去重。
  * @method void setSessionId(string $SessionId) 设置用于去重的识别码，如果三天内曾有过相同的识别码的请求，则本次的请求会返回错误。最长 50 个字符，不带或者带空字符串表示不做去重。
  * @method string getSessionContext() 获取来源上下文，用于透传用户请求信息，任务流状态变更回调将返回该字段值，最长 1000 个字符。
@@ -63,6 +65,11 @@ class EditMediaForDYRequest extends AbstractModel
     public $TasksPriority;
 
     /**
+     * @var string 保留字段，特殊用途时使用。
+     */
+    public $ExtInfo;
+
+    /**
      * @var string 用于去重的识别码，如果三天内曾有过相同的识别码的请求，则本次的请求会返回错误。最长 50 个字符，不带或者带空字符串表示不做去重。
      */
     public $SessionId;
@@ -78,6 +85,7 @@ class EditMediaForDYRequest extends AbstractModel
      * @param string $OutputObjectPath 视频处理输出文件的目标路径。
      * @param EditMediaOutputConfigForDY $OutputConfig 编辑后生成的文件配置。
      * @param integer $TasksPriority 任务优先级，数值越大优先级越高，取值范围是-10到 10，不填代表0。
+     * @param string $ExtInfo 保留字段，特殊用途时使用。
      * @param string $SessionId 用于去重的识别码，如果三天内曾有过相同的识别码的请求，则本次的请求会返回错误。最长 50 个字符，不带或者带空字符串表示不做去重。
      * @param string $SessionContext 来源上下文，用于透传用户请求信息，任务流状态变更回调将返回该字段值，最长 1000 个字符。
      */
@@ -119,6 +127,10 @@ class EditMediaForDYRequest extends AbstractModel
 
         if (array_key_exists("TasksPriority",$param) and $param["TasksPriority"] !== null) {
             $this->TasksPriority = $param["TasksPriority"];
+        }
+
+        if (array_key_exists("ExtInfo",$param) and $param["ExtInfo"] !== null) {
+            $this->ExtInfo = $param["ExtInfo"];
         }
 
         if (array_key_exists("SessionId",$param) and $param["SessionId"] !== null) {
